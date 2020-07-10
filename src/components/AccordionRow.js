@@ -36,17 +36,19 @@ class AccordionRow extends Component {
           </div>
           {
             isEditing ? (
-              <Select
-                defaultValue={defaultSelection}
-                options={
-                  groupOptions.map(groupOption => ({
-                    label: groupOption,
-                    value: groupOption
-                  }))
-                }
-                onChange={this.onGroupSelect}
-                className='flex-fill'
-              />
+                <div className='w-50'>
+                  <Select
+                    defaultValue={defaultSelection}
+                    options={
+                      groupOptions.map(groupOption => ({
+                        label: groupOption,
+                        value: groupOption
+                      }))
+                    }
+                    onChange={this.onGroupSelect}
+                    className='flex-fill'
+                  />
+                </div>
             ) : (
               <Button onClick={this.toggleEdit} className='btn btn-sm btn-outline-secondary'>Change Group</Button>
             )
