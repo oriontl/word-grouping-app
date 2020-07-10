@@ -11,7 +11,7 @@ class App extends Component {
       groups: {},
       editing: false,
       newGroupName: '',
-      groupNameTaken: false // todo need new? nit but concise good
+      groupNameTaken: false
     };
   }
 
@@ -27,7 +27,7 @@ class App extends Component {
 
   handleGroupChange = (word, oldGroup, newGroup) => {
     let {groups} = this.state;
-    const idx = groups[oldGroup].findIndex(w => (w === word)); // todo what is w
+    const idx = groups[oldGroup].findIndex(item => (item === word));
     delete groups[oldGroup][idx];
     groups[newGroup].push(word);
     this.setState({groups});
