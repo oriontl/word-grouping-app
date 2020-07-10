@@ -17,9 +17,30 @@ export const parseCSV = (f) => {
 };
 
 const groupByPrefix = (strings) => {
-  return ({
-    group1: ['word1', 'word2'],
-    group2: ['word3', 'word4', 'word5'],
-    group3: ['word6', 'word7']
-  });
+  let groups = {};
+
+  for (let s of strings) {
+    s = s.trim();
+
+    if (!s) {
+      continue;
+    }
+
+    const prefix = s.split('_')[0];
+    let found = false;
+
+    for (const groupName of Object.keys(groups)) {
+      if (groupName.length >= prefix.length && groupName.substring(0, prefix.length) === prefix) {
+        groups[groupName].push(s);
+        found = true;
+        break;
+      }
+    }
+
+    if (!found) {
+      groups[s] = [s];
+    }
+  }
+
+  return groups;
 };
