@@ -15,7 +15,7 @@ class Accordion extends Component {
   };
 
   render() {
-    const {groupName, groupItems} = this.props;
+    const {groupName, groupItems, groupOptions, handleGroupChange} = this.props;
     const {isOpen} = this.state;
     return (
       <div>
@@ -26,6 +26,9 @@ class Accordion extends Component {
               <AccordionRow
                 key={item}
                 item={item}
+                parentGroup={groupName}
+                groupOptions={groupOptions}
+                handleGroupChange={handleGroupChange}
               />
             )
           )}
