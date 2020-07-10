@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {parseCSV} from "./utils/parseUtils";
-import PrefixAccordions from "./components/PrefixAccordions";
-import CreateGroupForm from "./components/CreateGroupForm";
+import Header from './components/Header';
+import InputCSV from './components/InputCSV';
+import PrefixAccordions from './components/PrefixAccordions';
+import {parseCSV} from './utils/parseUtils';
 
 class App extends Component {
   constructor(props) {
@@ -11,19 +12,23 @@ class App extends Component {
       groups: {},
       editing: false,
       newGroupName: '',
-      groupNameTaken: false
+      groupNameTaken: false // todo need new? nit but concise good
     };
   }
 
-  handleUpload = async (e) => {
+  handleFileUpload = async (e) => {
     const f = e.target.files[0];
-    const groups = await parseCSV(f);
-    this.setState({groups});
+    try {
+      const groups = await parseCSV(f);
+      this.setState({groups});
+    } catch (e) {
+      console.warn(e.message);
+    }
   };
 
   handleGroupChange = (word, oldGroup, newGroup) => {
     let {groups} = this.state;
-    const idx = groups[oldGroup].findIndex(w => (w === word));
+    const idx = groups[oldGroup].findIndex(w => (w === word)); // todo what is w
     delete groups[oldGroup][idx];
     groups[newGroup].push(word);
     this.setState({groups});
@@ -66,10 +71,12 @@ class App extends Component {
   render() {
     const {groups, editing, newGroupName, groupNameTaken} = this.state;
     return (
-      <div>
-        <h1>Word Grouping App</h1>
-        <input type='file' accept='.csv' onChange={this.handleUpload}/>
-        <CreateGroupForm
+      <div className='container mt-3'>
+        <Header title='Word Grouping App'/>
+        <InputCSV handleFileUpload={this.handleFileUpload}/>
+        <PrefixAccordions
+          prefixGroups={groups}
+          handleGroupChange={this.handleGroupChange}
           editing={editing}
           newGroupName={newGroupName}
           groupNameTaken={groupNameTaken}
@@ -77,7 +84,6 @@ class App extends Component {
           updateNewGroupName={this.updateNewGroupName}
           createGroup={this.createGroup}
         />
-        <PrefixAccordions prefixGroups={groups} handleGroupChange={this.handleGroupChange}/>
       </div>
     );
   }

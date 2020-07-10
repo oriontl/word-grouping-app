@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import AccordionRow from './AccordionRow';
+import UnstyledButton from './shared/UnstyledButton';
 
 class Accordion extends Component {
   constructor(props) {
@@ -18,9 +19,9 @@ class Accordion extends Component {
     const {groupName, groupItems, groupOptions, handleGroupChange} = this.props;
     const {isOpen} = this.state;
     return (
-      <div>
-        <button onClick={this.toggleOpen}>{isOpen ? '-' : '+'} {groupName}</button>
-        <div>
+      <div className='mb-1'>
+        <UnstyledButton onClick={this.toggleOpen} className='btn mb-3 shadow-none'>{isOpen ? '-' : '+'} {groupName}</UnstyledButton>
+        <div className='ml-4'>
           {isOpen && (
             groupItems.map(item =>
               <AccordionRow

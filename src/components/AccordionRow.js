@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Select from 'react-select';
+import Button from "./shared/Button";
 
 class AccordionRow extends Component {
   constructor(props) {
@@ -29,8 +30,8 @@ class AccordionRow extends Component {
     const defaultSelection = {label: parentGroup, value: parentGroup};
     return (
       <>
-        <div>
-          <div>
+        <div className='d-flex align-items-center'>
+          <div className='mr-2'>
             {item}
           </div>
           {
@@ -44,9 +45,10 @@ class AccordionRow extends Component {
                   }))
                 }
                 onChange={this.onGroupSelect}
+                className='flex-fill'
               />
             ) : (
-              <button onClick={this.toggleEdit}>Change Group</button>
+              <Button onClick={this.toggleEdit} className='btn btn-sm btn-outline-secondary'>Change Group</Button>
             )
           }
         </div>
