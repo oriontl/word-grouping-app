@@ -23,7 +23,6 @@ const CreateGroupForm = ({
           className='mr-2'
         />
         <Button
-          type='submit'
           disabled={groupNameTaken || !newGroupName}
           className='btn btn-outline-success shadow-none'
         >

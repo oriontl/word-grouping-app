@@ -16,7 +16,7 @@ export const parseCSV = (f) => {
   });
 };
 
-const groupByPrefix = (strings) => {
+export const groupByPrefix = (strings) => {
   let groups = {};
 
   for (let s of strings) {

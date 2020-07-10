@@ -20,7 +20,12 @@ class Accordion extends Component {
     const {isOpen} = this.state;
     return (
       <div className='mb-1'>
-        <UnstyledButton onClick={this.toggleOpen} className='btn mb-3 shadow-none'>{isOpen ? '-' : '+'} {groupName}</UnstyledButton>
+        <UnstyledButton
+          onClick={this.toggleOpen}
+          className='btn mb-3 shadow-none'
+        >
+          {isOpen ? '-' : '+'} {groupName}
+        </UnstyledButton>
         <div className='ml-4'>
           {isOpen && (
             groupItems.map(item =>
