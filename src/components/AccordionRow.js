@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Select from 'react-select';
-import Button from "./shared/Button";
+import Button from './shared/Button';
 
 class AccordionRow extends Component {
   constructor(props) {

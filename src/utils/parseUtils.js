@@ -3,7 +3,7 @@ export const parseCSV = (f) => {
   return new Promise((resolve, reject) => {
     r.onerror = () => {
       r.abort();
-      reject(new DOMException("Error loading file."));
+      reject(new DOMException('Error loading file.'));
     };
 
     r.onload = () => {

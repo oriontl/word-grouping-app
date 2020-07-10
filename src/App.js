@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Header from './components/Header';
 import InputCSV from './components/InputCSV';
 import PrefixAccordions from './components/PrefixAccordions';
 import {parseCSV} from './utils/parseUtils';
@@ -72,7 +71,7 @@ class App extends Component {
     const {groups, editing, newGroupName, groupNameTaken} = this.state;
     return (
       <div className='container mt-3'>
-        <Header title='Word Grouping App'/>
+        <h1>Word Grouping App</h1>
         <InputCSV handleFileUpload={this.handleFileUpload}/>
         <PrefixAccordions
           prefixGroups={groups}
