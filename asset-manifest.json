@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/word-grouping-app/static/js/main.9fc28239.chunk.js",
-    "main.js.map": "/word-grouping-app/static/js/main.9fc28239.chunk.js.map",
+    "main.js": "/word-grouping-app/static/js/main.60c411a8.chunk.js",
+    "main.js.map": "/word-grouping-app/static/js/main.60c411a8.chunk.js.map",
     "runtime-main.js": "/word-grouping-app/static/js/runtime-main.e4ea7c3c.js",
     "runtime-main.js.map": "/word-grouping-app/static/js/runtime-main.e4ea7c3c.js.map",
     "static/css/2.af3c1da9.chunk.css": "/word-grouping-app/static/css/2.af3c1da9.chunk.css",
     "static/js/2.2294be3e.chunk.js": "/word-grouping-app/static/js/2.2294be3e.chunk.js",
     "static/js/2.2294be3e.chunk.js.map": "/word-grouping-app/static/js/2.2294be3e.chunk.js.map",
     "index.html": "/word-grouping-app/index.html",
-    "precache-manifest.b59e96b9c09b49dcc6f9ca61d702ef40.js": "/word-grouping-app/precache-manifest.b59e96b9c09b49dcc6f9ca61d702ef40.js",
+    "precache-manifest.1942d181975428979c60b86316e1097f.js": "/word-grouping-app/precache-manifest.1942d181975428979c60b86316e1097f.js",
     "service-worker.js": "/word-grouping-app/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/word-grouping-app/static/css/2.af3c1da9.chunk.css.map",
     "static/js/2.2294be3e.chunk.js.LICENSE.txt": "/word-grouping-app/static/js/2.2294be3e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e4ea7c3c.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.2294be3e.chunk.js",
-    "static/js/main.9fc28239.chunk.js"
+    "static/js/main.60c411a8.chunk.js"
   ]
 }
