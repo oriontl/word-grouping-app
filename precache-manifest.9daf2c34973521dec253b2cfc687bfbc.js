@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ed34367262c95497026719718dce5ba",
+    "revision": "41182cf995fbba8e1b6ee00e50ced3c0",
     "url": "/word-grouping-app/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/word-grouping-app/static/js/2.2294be3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "990ac1c0fa8e83309331",
-    "url": "/word-grouping-app/static/js/main.60c411a8.chunk.js"
+    "revision": "18ad01d712e03913eadc",
+    "url": "/word-grouping-app/static/js/main.3bc137ad.chunk.js"
   },
   {
     "revision": "7b2e1b5f260434563c71",
