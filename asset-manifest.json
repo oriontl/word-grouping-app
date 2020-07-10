@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/word-grouping-app/static/js/main.235e1535.chunk.js",
+    "main.js.map": "/word-grouping-app/static/js/main.235e1535.chunk.js.map",
+    "runtime-main.js": "/word-grouping-app/static/js/runtime-main.e4ea7c3c.js",
+    "runtime-main.js.map": "/word-grouping-app/static/js/runtime-main.e4ea7c3c.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/word-grouping-app/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.ed535318.chunk.js": "/word-grouping-app/static/js/2.ed535318.chunk.js",
+    "static/js/2.ed535318.chunk.js.map": "/word-grouping-app/static/js/2.ed535318.chunk.js.map",
+    "index.html": "/word-grouping-app/index.html",
+    "precache-manifest.87ab6e78995ef623f413e38db3c7c705.js": "/word-grouping-app/precache-manifest.87ab6e78995ef623f413e38db3c7c705.js",
+    "service-worker.js": "/word-grouping-app/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/word-grouping-app/static/css/2.af3c1da9.chunk.css.map",
+    "static/js/2.ed535318.chunk.js.LICENSE.txt": "/word-grouping-app/static/js/2.ed535318.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4ea7c3c.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.ed535318.chunk.js",
+    "static/js/main.235e1535.chunk.js"
+  ]
+}
